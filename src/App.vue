@@ -3,7 +3,8 @@
 <template lang="html">
   <div>
     <h1>NASA Photo of The Day</h1>
-    <p>{{ nasa }}</p>
+    <!-- Move this into a seperate image view component -->
+    <img :src="nasa.url" :alt="nasa.url">
 
   </div>
 
@@ -27,37 +28,3 @@ export default {
 
 <style lang="css" scoped>
 </style>
-
-
-
-
-
-
-<!-- <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
-</template>
-
-<script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
-</script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style> -->
