@@ -44,11 +44,11 @@ export default {
 <style lang="css" scoped>
 </style>
 
-methods: {
+<!-- methods: {
      getResult(query) {
        axios.get('https://images-api.nasa.gov/search?q=' + query + '&media_type=image').then( response => {
            console.log(response.data.collection.items);
            this.results = response.data.collection.items;
 
-
+ -->
 <!-- callApi() will want to use this.selectedDate -->
