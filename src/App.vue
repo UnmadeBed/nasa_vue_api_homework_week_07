@@ -4,6 +4,7 @@
     <!-- Move this into a seperate image view component -->
     <!-- <img :src="nasa.url" :alt="nasa.url"> MOVED -->
     <input v-model="selectedDate" type="date">
+    <!-- need to move this to it's own component -->
     <button @click="callApi">Get new image</button>
     <image-view :nasa="nasa" ></image-view>
   </div>
